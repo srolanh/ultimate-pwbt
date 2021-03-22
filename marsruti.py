@@ -193,7 +193,24 @@ def service_calendar(service_id):
             ret.append(r)
             ret.append(i[8])
             ret.append(i[9])
+            for j in calendar_dates:
+                if j[0] == service_id:
+                    ret.append(True)
+                    break
+            if len(ret) < 4:
+                ret.append(False)
             return ret
+
+def service_calendar_exc(service_id):
+    e1 = list()
+    e2 = list()
+    for i in calendar_dates:
+        if i[0] == service_id:
+            if i[2] == "1":
+                e1.append(i[1])
+            else:
+                e2.append(i[1])
+    return tuple((e1,e2))
 
 print("""
 ========================
@@ -208,6 +225,7 @@ while True:
 3) Reisa pieturas un laiki
 4) Visi maršruta reisi
 5) Reisi caur pieturu
+6) Reisa izņēmumi
 x) Iziet
 ? """
     n = input(msg)
@@ -240,6 +258,8 @@ x) Iziet
                             c = service_calendar(trip_service_id(k[0]))
                             atb += " " + c[0]
                             atb += " " + punct(c[1]) + "–" + punct(c[2])[0:len(punct(c[2]))-1]
+                            if c[3]:
+                                atb += " (*)"
                             l.append(tuple((time_to_int(stop_dep_time(k[0],i,k[1])), atb)))
         l.sort(key= lambda i : i[0])
         for i in l:
@@ -266,6 +286,8 @@ x) Iziet
             atb = sq(stop_name(s[0][0])) + " " + stop_time(i,s[0][0],s[0][1]) + " – " + sq(stop_name(s[-1][0])) + " " + stop_time(i,s[-1][0],s[-1][1]);
             atb += " [reiss " + i + "] "
             atb += c[0] + " " + punct(c[1]) + "–" + punct(c[2])[0:len(punct(c[2]))-1]
+            if c[3]:
+                atb += " (*)"
             print(atb)
     elif n == "5":
         p = stop_id(aq(input("Pietura: ")))
@@ -283,9 +305,18 @@ x) Iziet
                 atb += " [reiss " + i[0] + "] "
                 c = service_calendar(trip_service_id(i[0]))
                 atb += c[0] + " " + punct(c[1]) + "-" + punct(c[2])[0:len(punct(c[2]))-1]
+                if c[3]:
+                    atb += " (*)"
                 l.append(tuple((time_to_int(stop_time(i[0], j, i[1])), atb)))
         l.sort(key= lambda i : i[0])
         for i in l:
             print(i[1])
+    elif n == "6":
+        r = input("Reisa nr.: ")
+        ce = service_calendar_exc(trip_service_id(r))
+        for i in ce[0]:
+            print("Norīkots: " + punct(i))
+        for i in ce[1]:
+            print("Atcelts: " + punct(i))
     elif n == "x":
         break
