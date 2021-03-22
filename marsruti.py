@@ -195,6 +195,12 @@ def service_calendar(service_id):
             ret.append(i[9])
             return ret
 
+print("""
+========================
+  ULTIMATE PWBT ENGINE
+========================
+""")
+
 while True:
     msg = """
 1) Maršruta nosaukums no koda
