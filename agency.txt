@@ -1,24 +1,21 @@
 agency_id, agency_name, agency_url, agency_timezone, agency_phone, agency_lang
 23, "SIA GALSS BUSS", http://www.galssbuss.lv, Europe/Riga, 67226006, LV
-46, "SIA ""Viesītes transports""", https://www.viesitestransports.lv/, Europe/Riga, N, LV
+46, "SIA ""Viesītes transports""", http://www.atd.lv/lv/jaunumi/sia-viesites-transports, Europe/Riga, 65245284, LV
 66, "SIA Daugavpils autobusu parks", http://www.buspark.lv, Europe/Riga, 65422507, LV
 43, "SIA Jēkabpils autobusu parks", https://www.jekabpilsap.lv, Europe/Riga, 65237730, LV
-55, "AS Liepājas autobusu parks", http://www.lap.lv, Europe/Riga, 63426334, LV
+55, "AS Liepājas autobusu parks", http://www.lap.lv, Europe/Riga, 63426334 (Liepājā); 67214028 (Pierīgā), LV
+144, "AS Lux Express Estonia", https://luxexpress.eu/lv/, Europe/Riga, 67781350, LV
 67, "AS Talsu autotransports", https://autotransports.lv, Europe/Riga, 26431820, LV
-21, "SIA Sabiedriskais autobuss", http://sabiedriskaisautobuss.lv, Europe/Riga, 67113322, LV
-27, "SIA ""Rubenītis""", http://example.com/, Europe/Riga, N, LV
+21, "SIA Latvijas Sabiedriskais Autobuss ", http://sabiedriskaisautobuss.lv, Europe/Riga, 67113322, LV
+27, "SIA ""Rubenītis""", http://www.atd.lv/lv/jaunumi/sia-rubenitis, Europe/Riga, 26255189, LV
 58, "Pašvaldības SIA Ventspils reiss", http://www.ventspilsreiss.lv, Europe/Riga, 26018617, LV
 64, "SIA Gulbenes autobuss", http://www.atd.lv/lv/jaunumi/sia-gulbenes-autobuss, Europe/Riga, 64471788, LV
 18, "AS Rēzeknes autobusu parks", http://rezeknesap.lv, Europe/Riga, 64624137, LV
 61, "SIA NORMA-A", http://www.atd.lv/lv/jaunumi/sia-norma-a, Europe/Riga, 26312252, LV
 104, "AS Nordeka", http://www.nordeka.lv, Europe/Riga, 80000115, LV
-65, "SIA AIPS", http://www.atd.lv/lv/jaunumi/sia-aips, Europe/Riga, 63929717, LV
 62, "AS CATA", https://www.cata.lv, Europe/Riga, 64122121, LV
-139, "SIA ""DUNDAGAS ABC""", https://abc.lv/, Europe/Riga, 63232318, LV
 22, "SIA VTU Valmiera", http://www.vtu-valmiera.lv, Europe/Riga, 64229460, LV
 59, "SIA Ludzas autotransporta uzņēmums", http://www.atd.lv/lv/jaunumi/sia-ludzas-autotransporta-uznemums, Europe/Riga, 65722281, LV
 16, "SIA Ceļavējš-ATP", http://www.atd.lv/lv/jaunumi/sia-celavejs-atp, Europe/Riga, 64823220, LV
 17, "SIA DOBELES AUTOBUSU PARKS", https://www.dobelesautobusuparks.lv, Europe/Riga, 29438537, LV
-54, "SIA Madonas Ceļu būves SIA", http://www.atd.lv/lv/jaunumi/sia-madonas-celu-buves-sia, Europe/Riga, 64807061, LV
 68, "SIA Tukuma auto", http://www.tukumaauto.lv/, Europe/Riga, 29243537, LV
-57, "SIA ""DAUTRANS""", http://dautrans.lv, Europe/Riga, 29298772, LV
